@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisca Wear Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https:unpkg.com/feather-icons"></script>
+  </head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/prisca wear logo.jpeg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="cart.html"><img src="images/shopping_bag_full.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+
+            <div class="row">
+                <div class="col-2" >
+                    <h1>Welcome to Prisca Wear<br>Epitome of class</h1>
+                    <p>We design custom clothing for any occasion <br>Est 2020</p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-------------------- featured categories ---------------->
+    
+        <div class="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+          </div>
+        
+    <!-------------------- featured products ---------------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/black and white.PNG"></a>
+                <a href="products-details.html">
+                    <h4>Casual wear</h4>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/summer overall.jpeg">
+                <h4>Summer collection</h4>
+            </div>
+
+            <div class="col-4">
+                <img src="images/maternity.PNG">
+                <h4>Maternity range</h4>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/baby and momma.PNG">
+                <h4>Kiddies range</h4>    
+            </div>
+        </div>
+
+     </div>
+
+</div>
+
+    <!-- -------------About----------- -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/car.jpeg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <h1>About</h1>
+                    <h2>Meet the Founder and the Designer <br></h2>
+                    <h3><br>Mrs Nomvuzo Zangwa</h3>
+                    <p>BComHons Accounting </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- ------------------ footer ------------------>
+    <div class="cont-div">
+        <h1>CONTACT US</h1>
+    <form action="mailto:lungapiko911@gmail.com">
+        <label for="form">Get in touch with us&#128513; </label>      
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT"/>
+      </form>
+    </div> 
+    <!-- ------------------ footer ------------------>
+    <div class="footer">
+        <div class="container">
+           
+                <div class="footer-col-2">
+                    <img src="images/prisca wear logo.jpeg">
+                    <h4>Est 2020</h4>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nomvuzo.zangwa"  target="_blank" class="fa fa-facebook"></a></li>
+                        <li> <br><a href="https://instagram.com/priscawear?igshid=MzRlODBiNWFlZA==" target="_blank" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2023 - Lunga Piko <span>&copy;</span></p>
+        </div>
+    </div>
+
+    <!-- ------------ js for toggle menu -----------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
